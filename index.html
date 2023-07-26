@@ -1,11 +1,508 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test</title>
+  <title>경동 나비엔</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="shortcut icon" href="img/favion.jpg" type="image/x-icon">
+
+  <!-- swiper slide -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+    // const swiper = new Swiper(...)
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <style>
+    :root {
+    --swiper-theme-color: #f97b0b;
+  }
+  </style>
 </head>
+
 <body>
-  <p>test</p>
+  <div class="wrap">
+    <!-- header -->
+    <header>
+      <h1 class="logo">
+        <a href="#"><img src="img/LOGO.png" alt="logo"></a>
+      </h1>
+      <ul class="submenu">
+        <li><a href="#"><img src="img/submenu_01.png" alt="로그인"></a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#"><img class="dot" src="img/submenu_dot.png" alt="로그인"></a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#"><img class="dot" src="img/submenu_dot.png" alt="로그인"></a></li>
+        <li><a href="#">마이 나비엔</a></li>
+        <li><a href="#"><img class="dot" src="img/submenu_dot.png" alt="로그인"></a></li>
+        <li><a href="#">나비엔 SNS</a></li>
+        <li><a href="#"><img src="img/submenu_bag.png" alt="로그인"></a></li>
+        <li><a href="#">협력사등록</a></li>
+        <button>
+          <p>RECRUIT</p>
+          <img src="img/submenu_user.png" alt="user">
+        </button>
+        <button>
+          <p>경동 홍보자료</p>
+          <img src="img/submenu_arrowdropdown.png" alt="arrowdropdown">
+        </button>
+      </ul>
+      <ul class="mainmenu">
+        <li><a href="#">제품 소개</a>
+          <ul class="mainmenu_item">
+            <li><a href="#">보일러</a></li>
+            <li><a href="#">온수매트</a></li>
+            <li><a href="#">DC온열매트</a></li>
+            <li><a href="#">청정환기장치</a></li>
+            <li><a href="#">주방가전</a></li>
+            <li><a href="#">스마트 홈</a></li>
+            <li><a href="#">렌탈/케어</a></li>
+            <li><a href="#">교체용 필터</a></li>
+          </ul>
+        </li>
+        <li><a href="#">고객 서비스</a>
+          <ul class="mainmenu_item">
+            <li><a href="#">구매 가이드</a></li>
+            <li><a href="#">제품 가이드</a></li>
+            <li><a href="#">빠른해결</a></li>
+            <li><a href="#">A/S 접수 및 안내</a></li>
+            <li><a href="#">고객의 소리</a></li>
+          </ul>
+        </li>
+        <li><a href="#">함께하는 나비엔</a>
+          <ul class="mainmenu_item">
+            <li><a href="#">나비엔 콘덴싱</a></li>
+            <li><a href="#">나비엔 뉴스룸</a></li>
+            <li><a href="#">나비엔 매거진</a></li>
+            <li><a href="#">나비엔 경쟁력</a></li>
+          </ul>
+        </li>
+        <li><a href="#">회사 소개</a>
+          <ul class="mainmenu_item">
+            <li><a href="#">기업소개</a></li>
+            <li><a href="#">지속가능경영</a></li>
+            <li><a href="#">투자정보</a></li>
+            <li><a href="#">인재경영</a></li>
+            <li><a href="#">윤리경영</a></li>
+          </ul>
+        </li>
+        <div class="search">
+          <p>SEARCH</p>
+          <img src="img/mainmenu_search.png" alt="search">
+        </div>
+      </ul>
+      <!-- mainmenu end -->
+      <div class="menuleft">
+        <p>Home ></p>
+        <p>제품소개</p>
+      </div>
+      <div class="menuright">
+        <img src="img/menudown_SNS.png" alt="sns">
+        <p>퍼가기</p>
+        <img src="img/menudown_dig.png" alt="dig">
+        <img src="img/menudown_..png" alt=".">
+        <p>프린트</p>
+        <img src="img/menudown_print.png" alt="print">
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- slide -->
+    <div class="slide">
+      <div>
+        <h3>제품소개</h3>
+        <p>대한민국 보일러·온수기 해외 수출 1위, 보일러하면 경동나비엔</p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#"><img src="img/slide_visual1.png" alt="slide_visual1"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="img/slide_visual2.png" alt="slide_visual2"></a></div>
+          <div class="swiper-slide"><img src="img/slide_visual3.jpg" alt="slide_visual3"></div>
+          <div class="swiper-slide"><img src="img/slide_visual4.jpg" alt="slide_visual4"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- slide end -->
+
+    <!-- contents -->
+    <div class="contents">
+      <div class="category">
+        <h3>제품 검색</h3>
+        <select name="제품군 선택" id="제품군 선택1">
+          <option value="제품군 선택">제품군 선택</option>
+          <option value="보일러">보일러</option>
+          <option value="청정환기시스템">청정환기시스템</option>
+          <option value="주방가전">주방가전</option>
+          <option value="온수기">온수기</option>
+          <option value="온수매트">온수매트</option>
+          <option value="DC온열매트">DC온열매트</option>
+          <option value="시스템각방">시스템각방</option>
+          <option value="실내온도조절기">실내온도조절기</option>
+          <option value="홈네트워크">홈네트워크</option>
+          <option value="상업용">상업용</option>
+        </select>
+        <select name="제품군 선택" id="제품군 선택2">
+          <option value="제품군 선택">제품군 선택</option>
+          <option value="콘덴싱 가스보일러">콘덴싱 가스보일러</option>
+          <option value="일반 가스보일러">일반 가스보일러</option>
+          <option value="콘덴싱 기름보일러">콘덴싱 기름보일러</option>
+          <option value="일반 기름보일러">일반 기름보일러</option>
+          <option value="전기보일러">전기보일러</option>
+        </select>
+        <select name="브랜드 선택" id="브랜드 선택">
+          <option value="브랜드 선택">브랜드 선택</option>
+          <option value="경동 나비엔">경동 나비엔</option>
+          <option value="LG">LG</option>
+        </select>
+        <select name="모델 선택" id="모델 선택">
+          <option value="모델 선택">모델 선택</option>
+          <option value="NCB900 시리즈">NCB900 시리즈</option>
+          <option value="NCB700 시리즈">NCB700 시리즈</option>
+          <option value="NCB500 시리즈">NCB500 시리즈</option>
+          <option value="NCB300 시리즈">NCB300 시리즈</option>
+        </select>
+        <button>검색</button>
+      </div>
+      <div class="contentsCon">
+        <div class="conleft">
+          <div class="conleft1">
+            <img src="img/conleft1.png" alt="conleft1">
+            <img src="img/conleft2.png" alt="conleft2">
+            <img src="img/conleft3.png" alt="conleft3">
+          </div>
+          <div class="conleft2">
+            <div><p>가스보일러</p></div>
+            <div><p>기름보일러</p></div>
+            <ul class="conleft_menu">
+              <li>보일러 구분
+                <ul>
+                  <li>
+                    <input type="checkbox">
+                    <p>콘덴싱</p>
+                  </li>
+                  <li>
+                    <input type="checkbox">
+                    <p>일반</p>
+                  </li>
+                </ul>
+              </li>
+              <li>용량 선택
+                <ul>
+                  <li>
+                    <input type="radio">
+                    <p>난방면적 기준</p>
+                  </li>
+                  <li>
+                    <input type="radio">
+                    <p>온수사용량기준(동절기)</p>
+                  </li>
+                </ul>
+              </li>
+              <li>설치 위치
+                <ul>
+                  <li>
+                    <input type="radio">
+                    <img src="" alt="">
+                    <p>대기개방식</p>
+                  </li>
+                  <li>
+                    <input type="radio">
+                    <img src="" alt="">
+                    <p>대기차단식</p>
+                  </li>
+                </ul>
+              </li>
+              <li>온수온도
+                <ul>
+                  <li>
+                    <input type="checkbox">
+                    <p>0.5℃</p>
+                  </li>
+                  <li>
+                    <input type="checkbox">
+                    <p>1℃</p>
+                  </li>
+                  <li>
+                    <input type="checkbox">
+                    <p>3단계</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="leftbottom">
+              <div><p>보일러 찾기</p></div>
+            <div><p>다시 선택하기</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productCon">
+            <div class="box one">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product1.png" alt="product1">
+              <a href="#">
+                <p>나비엔 PRO 일반 가스보일러</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+            <div class="box two">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product2.png" alt="product2">
+              <a href="#">
+                <p>나비엔 콘덴싱 디럭스형 18KD</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+            <div class="box thr">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product3.png" alt="product3">
+              <a href="#">
+                <p>나비엔 콘덴싱 기름보일러</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+            <div class="box four">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product4.png" alt="product4">
+              <a href="#">
+                <p>나비엔 PRO 일반 가스보일러</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+            <div class="box five">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product5.png" alt="product5">
+              <a href="#">
+                <p>나비엔 콘덴싱 디럭스형 18KD</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+            <div class="box six">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product6.png" alt="product6">
+              <a href="#">
+                <p>나비엔 PRO 일반 가스보일러</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+            <div class="box sev">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product7.png" alt="product7">
+              <a href="#">
+                <p>나비엔 PRO 일반 가스보일러</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+            <div class="box eig">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product8.png" alt="product8">
+              <a href="#">
+                <p>나비엔 콘덴싱 디럭스형 18KD</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+            <div class="box nine">
+              <input type="checkbox" id="choice">
+              <label for="choice">비교하기 선택</label>
+              <img src="img/product9.png" alt="product9">
+              <a href="#">
+                <p>나비엔 PRO 일반 가스보일러</p>
+                <ul>
+                  <li><p>C</p></li>
+                  <li><p>1℃</p></li>
+                  <li><img src="img/product_icon1.png" alt="product_icon1"></li>
+                  <li><p>S</p></li>
+                  <li><img src="img/product_icon2.png" alt="img/product_icon2"></li>
+                </ul>
+                <button>
+                  <p>자세히보기</p>
+                  <img src="img/product_icon3.png" alt="product_icon3">
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="bottom">
+          <div class="abox"><img src="img/bottom1.png" alt=""></div>
+          <div class="abox"></div>
+          <a href="#"><span>1</span>2 3 4 5 6 7 8 9 10</a>
+          <div class="abox"><img src="img/bottom2.png" alt=""></div>
+          <div class="abox"></div>
+          <p><span>1</span> / 23</p>
+        </div>
+      </div>
+      <!-- contentsCon end -->
+    </div>
+    <!-- contents end -->
+
+    <!-- footer -->
+    <footer>
+      <div class="fmenu">
+        <p>GLOBAL NETWORK</p>
+        <p>사이버신문고</p>
+        <p>찾아오시는 길</p>
+        <p>사이트맵</p>
+        <p>이용약관</p>
+        <p>개인정보취급방침</p>
+        <p>법적고지</p>
+        <p>이메일무단수집거부</p>
+        <select>
+          <option value="family site">FAMILY SITE</option>
+          <option value="facebook">Facebook</option>
+          <option value="instagram">Instagram</option>
+          <option value="twitter">Twitter</option>
+        </select>
+      </div>
+      <ul class="prize">
+        <li>
+          <img src="img/prize_01.png" alt="prize_01">
+          <p>올해 브랜드 대상<br>11년 연속 1위<br>통상 12회 1위</p>
+        </li>
+        <li>
+          <img src="img/prize_02.png" alt="prize_02">
+          <p>프리미엄<br>브랜드지수<br>7년 연속 1위</p>
+        </li>
+        <li>
+          <img src="img/prize_03.png" alt="prize_03">
+          <p>한국웰빙<br>환경만족지수<br>16년 연속 1위</p>
+        </li>
+        <li>
+          <img src="img/prize_04.png" alt="prize_04">
+          <p>한국품질<br>만족지수<br>14년 연속 1위</p>
+        </li>
+        <li>
+          <img src="img/prize_05.png" alt="prize_05">
+          <p>한국산업의<br>고객만족도<br>9년 연속 1위</p>
+        </li>
+        <li>
+          <img src="img/prize_06.png" alt="prize_06">
+          <p>소비자중심경영<br>인증(CCM)<br>6회연속획득</p>
+        </li>
+        <li>
+          <img src="img/prize_07.png" alt="prize_07">
+          <p>업계최초<br>월드클래스<br>300선정</p>
+        </li>
+        <!-- <li><a href="#">제품구입 및 A/S문의<span>1588 - 1144</span></a></li> -->
+      </ul>
+      <img src="img/foot_logo.png" alt="foot_logo">
+      <div class="foot">
+        <div class="foot1">
+          <p>(주)경동나비엔</p>
+          <p>서울특별시 영등포구 국회대로76길 22, 2~7층 (여의도동, 한국기계산업진흥회 신관)</p>
+          <p>대표이사 : 손연호</p>
+        </div>
+        <div class="foot2">
+          <p>사업자등록번호 : 125-81-01234</p>
+          <p>고객상담센터 : 1588-1144</p>
+          <p>COPYRIGHT © 2017 KYUNG DONG NAVIEN., ALL RIGHTS RESERVED.</p>
+        </div>
+        
+      </div>
+      <span>1588-1144</span>
+      <p>고객상담센터</p>
+    </footer>
+  </div>
 </body>
 </html>
