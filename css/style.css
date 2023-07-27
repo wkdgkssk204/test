@@ -126,23 +126,39 @@ header{
 .mainmenu .mainmenu_item li a:hover{
   color: #f97b0b;
 }
-.mainmenu .search{
+/* .mainmenu .search{
   width: 196px;
   height: 23px;
   background-color: #f97b0b;
   display: flex;
   margin-left: 40px;
   cursor: pointer;
-}
-.mainmenu .search p{
+} */
+/* .mainmenu .search p{
   font-size: 8px;
   color: #fff;
   padding: 3px 10px;
-}
-.mainmenu .search img{
+} */
+/* .mainmenu .search img{
   width: 13px;
   height: 13px;
   margin: 5px 10px 0 120px;
+} */
+.d-flex{
+  width: 196px;
+  height: 23px;
+  display: flex;
+  margin: 2px 0 0 40px;
+}
+.d-flex input{
+  color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+}
+.d-flex button{
+  background-color: #f97b0b;
+  width: 30px;
+  height: 23px;
 }
 /* menudown */
 .menuleft{
