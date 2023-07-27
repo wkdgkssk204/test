@@ -16,6 +16,7 @@ button{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 body{
   background-color: #fff;
@@ -131,6 +132,7 @@ header{
   background-color: #f97b0b;
   display: flex;
   margin-left: 40px;
+  cursor: pointer;
 }
 .mainmenu .search p{
   font-size: 8px;
@@ -159,6 +161,7 @@ header{
   display: flex;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 .menuright{
   display: flex;
@@ -289,6 +292,7 @@ header{
   border-top: none;
   padding: 25px 20px;
   position: relative;
+  cursor: pointer;
 }
 .conleft2>div>p{
   float: left;
